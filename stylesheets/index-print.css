@@ -1,0 +1,163 @@
+@charset "utf8";
+/* --需要兼容的属性-- */
+/*默认参数*/
+/* --需要兼容的属性-- */
+/*border*/
+/*border*/
+/* -- 过渡 开始 -- */
+/* -- 过渡 结束 -- */
+/*多列布局*/
+.bgd1 {
+  background: #8cc540;
+}
+.bgd2 {
+  background: #09b3cd;
+}
+.bgd3 {
+  background: #2e3094;
+}
+.bgd4 {
+  background: #d55401;
+}
+.bgd7 {
+  background: #c14749;
+}
+.bgd5 {
+  background: #485f00;
+}
+.bgd6 {
+  background: #92278f;
+}
+.header {
+  height: 60px;
+  background: #1e3e57;
+  z-index: 999;
+}
+.header h3 {
+  line-height: 60px;
+}
+.main {
+  height: calc(100% - 60px);
+  min-width: 450px;
+}
+.sideBar {
+  z-index: 100;
+  width: 35%;
+  background: #1e3e57;
+}
+/*左侧*/
+.budianDlg {
+  padding: 10px;
+  left: 0;
+  transition: all 0.2s linear 0.1s;
+  -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
+  -ms-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
+}
+.budianDlg:nth-of-type(5) p {
+  margin: 6px auto 6px 10px;
+  background: #c14749;
+  padding: 0 10px;
+}
+.budianDlg img {
+  margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.9), 0 2px 2px rgba(0, 0, 0, 0.1) inset, 0 0 0 8px rgba(255, 255, 255, 0.9);
+}
+.budianDlg .contact {
+  display: block;
+  width: 88%;
+  line-height: 50px;
+  background: #c14749;
+  text-indent: 10px;
+}
+.budianDlg a {
+  display: block;
+  width: 76%;
+  background: #c14749;
+  margin-top: 5px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-left: calc(12%);
+}
+.budianDlg a:hover {
+  background: rgba(193, 71, 73, 0.9);
+}
+/*右侧*/
+.slide {
+  width: 65%;
+}
+.slide,
+.sideBar {
+  margin-top: 60px;
+}
+.List {
+  top: 0;
+  left: 0;
+  transition: all 0.2s linear 0.1s;
+  -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
+  -ms-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
+}
+.sideBar {
+  height: 2520px;
+}
+.ListItem {
+  position: relative;
+  float: left;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+.ListItem:nth-of-type(1) {
+  height: 600px;
+}
+.ListItem:nth-of-type(2) {
+  height: 1920px;
+}
+.ListItem .ListItem-content {
+  height: 40%;
+  min-height: 400px;
+  margin-top: 15%;
+  /*发现top值是剩余(100% - 40%)/2*/
+}
+.ListItem .ListItem-content.work {
+  height: 40%;
+  margin-top: 2%;
+}
+.ListItem .ListItem-content.skills {
+  height: 60%;
+  margin-top: 10%;
+}
+.ListItem .ListItem-content.skills p {
+  text-align: left;
+  text-indent: 1em;
+  margin: 6px auto 6px 15%;
+  background: #1e3e57;
+  border-left: 3px solid #b14649;
+}
+.ListItem .ListItem-content.projects {
+  height: 100%;
+  margin: 4% auto;
+  /*margin值左右是/2,上下是/4, margin-top和margin-bottom值会叠加*/
+}
+.ListItem .ListItem-content.projects ul {
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.ListItem .ListItem-content.projects .project-item {
+  padding: 20px;
+  background: #1e3e57;
+  margin: 5% 5% 0 5%;
+}
+.ListItem .ListItem-content.projects .project-item > div * {
+  line-height: 30px;
+}

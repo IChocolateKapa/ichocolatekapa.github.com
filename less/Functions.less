@@ -1,0 +1,96 @@
+@charset "utf8";
+
+
+
+/* --需要兼容的属性-- */
+.rotate(@deg){
+  transform: rotate(@deg);
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+}
+.transform(@args){
+  transform: @args;
+  -webkit-transform: @args;
+  -moz-transform: @args;
+  -ms-transform: @args;
+  -o-transform: @args;
+}
+.border-radius(@radius){
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+}
+/*默认参数*/
+.boxShadow(@x:0, @y:0, @blur:1px, @color:#000){
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  -ms-box-shadow: @arguments;
+  -o-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+/* --需要兼容的属性-- */
+/*border*/
+.border(@color:black){
+  border: 1px solid @color;
+}
+.border-left(@color:black){
+  border-left: 1px solid @color;
+}
+.border-right(@color:black){
+  border-right: 1px solid @color;
+}
+.border-top(@color:black){
+  border-top: 1px solid @color;
+}
+.border-bottom(@color:black){
+  border-bottom: 1px solid @color;
+}
+/*border*/
+
+/* -- 过渡 开始 -- */
+.transition(@duration:.1s, @animate:linear, @delay:0s){
+  transition: @duration @animate @delay;
+  -webkit-transition: @duration @animate @delay;
+  -moz-transition: @duration @animate @delay;
+  -ms-transition: @duration @animate @delay;
+  -o-transition: @duration @animate @delay;
+}
+.transition-all(@attr:all, @duration:.1s, @animate:linear, @delay:0s){
+  transition: @arguments;
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+}
+.transition-org(@trans){
+  transition: @trans;
+  -webkit-transition: @trans;
+  -moz-transition: @trans;
+  -ms-transition: @trans;
+  -o-transition: @trans;
+}
+/* -- 过渡 结束 -- */
+
+
+/*多列布局*/
+
+.columnCount(@n){
+  column-count: @n;
+  -webkit-column-count: @n;
+  -moz-column-count: @n;
+}
+
+.columnWidth(@w){
+  column-width: @w;
+  -webkit-column-width: @w;
+  -moz-column-width: @w;
+}
+.columnRule(){
+  column-rule-color: red;
+  -webkit-column-rule-color: red;
+}

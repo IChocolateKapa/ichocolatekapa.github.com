@@ -1,0 +1,301 @@
+
+@charset "utf8";
+
+@import "Functions";
+
+.bgd1{
+  //background: #f9f7ac;
+  background: #8cc540;
+  //background: #00c0e4;
+}
+.bgd2{
+  background: #09b3cd;
+  //background: #5bd999;
+  //background: #0e7ac3;
+}
+.bgd3{
+  background: #b4c304;
+  //background: #ffc702;
+  //background: #e88d70;
+  //background: #2e3094;
+  //background: #92278f;
+  //background: #7658f8;
+  //background: #8f44ad;
+}
+.bgd4{
+  background: #d55401;
+}
+.bgd7{
+  background: #c14749;
+}
+.bgd5{
+  background: #485f00;
+  //background: #e6567a;
+  //background: #c1392b;
+}
+.bgd6{
+  background: #92278f;
+  //background: #cb70d7;
+  //background: #2d3e50;
+}
+
+.header{
+  height: 60px;
+  background: #1e3e57;
+  z-index: 999;
+}
+.header h3{
+  line-height: 60px;
+}
+
+
+.main{
+  height: ~'calc(100% - 60px)';
+  min-width: 450px;
+}
+
+
+.sideBar{
+  z-index: 100;
+  width: 15%;
+  background: #1e3e57;
+}
+
+@sideBarClor: #c14749;
+@sideBarBtnSize: 50px;
+
+/*左侧*/
+.budianDlg{
+  padding: 10px;
+  left: 0;
+  .transition-org(all .2s linear .1s);
+  &:nth-of-type(1) a{
+    display: block;
+    width: 76%;
+    background: @sideBarClor;
+    margin-top: 5px;
+    line-height: @sideBarBtnSize;
+    vertical-align: middle;
+    margin-left: calc(88% - 76%);
+    &:hover{
+      background: rgba(193, 71, 73, .9);
+    }
+  }
+  .contact{
+    display: block;
+    width: 88%;
+    line-height: @sideBarBtnSize;
+    background: @sideBarClor;
+    text-indent: 10px;
+  }
+}
+
+
+
+/*右侧*/
+.slide{
+  width: 85%;
+  //width: 100%;
+  &:hover{
+    .slider-prev,
+    .slider-next{
+      opacity: 1;
+    }
+  }
+}
+
+.slide,
+.sideBar{
+  margin-top: 60px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+} /* 这是针对缺省样式 (必须的) */
+::-webkit-scrollbar-track {
+  background-color: rgba(30, 62, 77, .3);
+} /* 滚动条的滑轨背景颜色 */
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(72, 95, 0, .9);
+} /* 滑块颜色 */
+
+::-webkit-scrollbar-button {
+  //background-color: #1e3e57;
+} /* 滑轨两头的监听按钮颜色 */
+
+::-webkit-scrollbar-corner {
+  background-color: black;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+.List{
+  left: 0;
+  .transform(translate(0));
+  .transition-org(all .2s linear .1s);
+
+}
+.ListItem{
+  z-index: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  .transition-org(all .2s linear);
+  &.curr{
+    opacity: 1;
+    z-index: 1;
+  }
+  &:nth-of-type(1) img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgba(255,255,255,.9), 0 2px 2px rgba(0,0,0,.1)inset, 0 0 0 8px rgba(255,255,255,.9);
+  }
+
+  .ListItem-content{
+    height: 40%;
+    min-height: 400px;
+    margin-top: 15%;/*发现top值是剩余(100% - 40%)/2*/
+    &>*{
+      margin-top: 10px;
+    }
+    &.home,
+    &.work{
+      height: 50%;
+      margin-top: 12.5%;
+    }
+    &.selfEvaluation,
+    &.skills{
+      height: 60%;
+      margin-top: 10%;
+      p{
+        text-align: left;
+        text-indent: 1em;
+        margin: 6px auto 6px 15%;
+        background: rgba(241, 89, 42, .8);
+        border-left: 3px solid #b14649;
+        padding-right: 5px;
+      }
+    }
+    &.projects{
+      height: 80%;
+      margin: 4% auto;/*margin值左右是/2,上下是/4, margin-top和margin-bottom值会叠加*/
+      ul{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 80%;
+        height: 90%;
+        margin: 0 auto;
+        padding-top: 2%;
+        padding-bottom: 2%;
+      }
+      .project-item{
+        padding: 20px;
+        width: 80%;
+        background: #0a646d;
+        //background: #e16661;
+        //background: #662191;
+        //background: #ffc702;
+        //background: #5e9fa5;
+        //background: #485f00;
+        margin: 5% 5% 0 5%;
+        &.project-item:nth-of-type(1){
+          margin: 1% 5%;
+        }
+        &>div *{
+          line-height: 30px;
+        }
+      }
+    }
+    &.selfEvaluation p{
+        background: @sideBarClor;
+        width: 60%;
+        border-left: 3px solid #c1392b;
+        margin: 6px auto 6px 20%;
+    }
+
+    &.work p{
+      width: 80%;
+      margin: 0 auto 10px 15%;
+      span{
+        text-align: left;
+        //background: papayawhip;
+        width: 50%;
+        margin: 0 auto 10px 25%;
+      }
+    }
+
+  }
+}
+
+
+
+@trigerSize: 30px;
+@trigerTop: 10px;
+.slideTrigger{
+  width: @trigerSize;
+  margin: 0 auto;
+  left: @trigerSize;
+  ul{
+    height: 6*@trigerTop + @trigerSize*6;
+    width: @trigerSize;
+    top: 50%;
+    margin-top: -6*@trigerTop/2 - @trigerSize*6/2;
+  }
+  li{
+    margin-top: @trigerTop;
+    a{
+      width: @trigerSize;
+      line-height: @trigerSize;
+      border: transparent;
+      .border-radius(50%);
+      background: rgba(255, 255, 255, .3);
+      .transition-org(all .2s linear .1s);
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+  li.curr a{
+    background: @sideBarClor;
+    color: #fff;
+  }
+}
+
+
+@prev-nextW: 100%;
+@prev-nextH: 60px;
+.slider-next,
+.slider-prev{
+  width: @prev-nextW;
+  line-height: @prev-nextH;
+  opacity: 0;
+  z-index: 4;
+  left: 50%;
+  margin-left:  -@prev-nextW/2;//不能有空格
+  .transition-org( all .1s linear);
+  background: rgba(0,0,0,0.2);
+  &:hover{
+    background: rgba(0,0,0,0.4);
+  }
+}
+
+.slider-prev{
+  top: 0;
+}
+.slider-next{
+  bottom: 0;
+}
+.ctl-btn{
+  width: 80px;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 0.2);
+  top: 70px;
+  left: 20px;
+  z-index: 99;
+  color: #999;
+  &:hover{
+    color: #fff;
+  }
+
+}
+

@@ -1,0 +1,133 @@
+@charset "utf8";
+/* --需要兼容的属性-- */
+/*默认参数*/
+/* --需要兼容的属性-- */
+/*border*/
+/*border*/
+/* -- 过渡 开始 -- */
+/* -- 过渡 结束 -- */
+/*多列布局*/
+.bgd1 {
+  background: #00c0e4;
+}
+.bgd2 {
+  background: #5bd999;
+}
+.bgd3 {
+  background: #7658f8;
+}
+.bgd4 {
+  background: #d55401;
+}
+.bgd5 {
+  background: #e6567a;
+}
+.bgd6 {
+  background: #cb70d7;
+}
+.header {
+  height: 60px;
+  background: #1e3e57;
+  z-index: 999;
+}
+.header h3 {
+  line-height: 60px;
+}
+.main {
+  height: calc(100% - 60px);
+  min-width: 450px;
+}
+.slide {
+  width: 85%;
+}
+.slide:hover .slider-prev,
+.slide:hover .slider-next {
+  opacity: 1;
+}
+.slide,
+.sideBar {
+  margin-top: 60px;
+}
+.List {
+  left: 0;
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  transition: all 0.2s linear 0.1s;
+  -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
+  -ms-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
+}
+.ListItem {
+  z-index: 0;
+  top: 0;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+.ListItem.curr {
+  left: 0;
+  z-index: 1;
+}
+.slideTrigger {
+  height: 30px;
+  margin: 0 auto;
+  bottom: 60px;
+}
+.slideTrigger ul {
+  width: calc(6*20px + 30px*6);
+  height: 30px;
+}
+.slideTrigger li {
+  margin-left: 20px;
+}
+.slideTrigger li a {
+  width: 30px;
+  line-height: 30px;
+  border: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s linear 0.1s;
+  -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
+  -ms-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
+}
+.slideTrigger li a:hover {
+  color: #fff;
+}
+.slideTrigger li.curr a {
+  background: #c14749;
+  color: #fff;
+}
+.slider-next,
+.slider-prev {
+  width: 28px;
+  height: 62px;
+  line-height: 62px;
+  opacity: 0;
+  z-index: 4;
+  top: 50%;
+  margin-top: -31px;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  background: rgba(0, 0, 0, 0.2);
+}
+.slider-prev {
+  left: 15px;
+}
+.slider-next {
+  right: 15px;
+}
