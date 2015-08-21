@@ -42,7 +42,10 @@ require(['jquery', 'indexApp', 'event', 'watFal'], function($, iApp, EV, wf){
         })
 
         $(".slideTrigger li").mouseleave(function(){
+            clearTimeout(slideTime);
+
             indexApp.clearAutoPlayTimer();
+
             if(autoPlay){
                 indexApp.autoSlide();
                 $(".ctl-btn").html("暂停").removeClass("play").attr("title", "暂停自动播放");
