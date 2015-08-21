@@ -43,6 +43,7 @@ ul, ul li{
 .fc375c84{color: #375c84}
 .fc209599{color: #209599 !important;}
 .fc22aabb{color: #22AABB}
+.fcc14749{color: #c14749;}
 .fcpink{color: hotpink;}
 .fc657384{color: #657384;}
 .fcff9d28{color: #FFD928;}
@@ -223,10 +224,11 @@ ul, ul li{
 .mt26{margin-top: 26px;}
 .mt32{margin-top: 33px;}
 .mt49{margin-top: 49px;}
-.mt80{margin-top: 80px;}
-.mt120{margin-top: 120px;}
-.mt180{margin-top: 180px;}
-.mt250{margin-top: 250px;}
+.mt80{margin-top: 80px !important;}
+.mt120{margin-top: 120px !important;}
+.mt150{margin-top: 150px !important;}
+.mt180{margin-top: 180px !important;}
+.mt250{margin-top: 250px !important;}
 .mt320{margin-top: 320px;}
 .ml-1{margin-left: -1px;}
 .ml5{margin-left: 5px;}
