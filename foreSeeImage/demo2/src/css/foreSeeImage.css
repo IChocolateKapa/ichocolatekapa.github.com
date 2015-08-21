@@ -1,0 +1,13 @@
+
+.mask{
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(234, 255, 0, .2);
+    z-index: 100;
+    cursor: move;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}

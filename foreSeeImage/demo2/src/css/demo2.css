@@ -1,0 +1,53 @@
+body{
+    background: rgb(34, 188, 175);
+}
+.main{
+    margin-top: 80px;
+    height: 700px;
+    /*background: rgb(34, 158, 175);*/
+}
+.slide{
+    width: 85%;
+}
+.slideContent,
+.ListContainer,
+.List,
+.ListItem,
+.ListItem img{
+    width: 620px;
+    height: 380px;
+}
+
+.slideContent{
+    width: 960px;
+}
+.slideContent{
+    height: 464px;
+}
+.ListItem{
+    z-index: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ListItem.curr{
+    z-index: 1;
+    display: block;
+}
+
+.footerImg{
+    position: relative;
+    width: 620px;
+    height: 80px;
+    border: 1px solid white;
+    bottom: 0;
+}
+.footerImg li{
+    float: left;
+}
+.footerImg li img{
+    width: calc(620px / 6);
+    height: 80px;
+}

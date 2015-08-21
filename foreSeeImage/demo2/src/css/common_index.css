@@ -1,0 +1,68 @@
+/**
+ * Created by Administrator on 2015/8/7.
+ */
+@charset "utf-8";
+body{
+    background: white;
+}
+.mt60{
+    margin-top: 61px;
+}
+.main{
+    width: 100%;
+    min-width: 1210px;
+    min-height: 768px;
+}
+
+.sideBar{
+    z-index: 100;
+    width: 15%;
+    box-shadow: 0 0 15px 10px rgba(34, 185, 180, .36) inset;
+    background: rgba(34, 195, 170, .8);
+}
+.mapCanvas{
+    width: 85%;
+}
+
+.budianDlg{
+    width: 100%;
+    padding: 10px;
+    left: 0;
+    transition: all .2s linear .1s;
+}
+
+.btn{
+    line-height: 40px;
+    width: 220px;
+    background: rgba(0, 176, 138, 1);
+    outline: none;
+    color: white;
+    font-size: 16px;
+    border: none;
+    font-family: "Microsoft Yahei";
+    margin-top: 8px;
+}
+.btn:hover{
+    background: #00b07b;
+}
+.budianDlg .contact{
+    display: block;
+    /*width: 250px;*/
+    width: 88%;
+    line-height: 50px;
+    background: #00b07b;
+    text-indent: 10px;
+}
+.budianDlg a{
+    display: block;
+    width: 76%;
+    height: 40px;
+    background: rgba(0, 176, 138, .7);
+    margin-top: 5px;
+    line-height: 40px;
+    vertical-align: middle;
+    margin-left: calc(88% - 76%);
+}
+.budianDlg a:hover{
+    background: rgba(0, 176, 138, 1)
+}

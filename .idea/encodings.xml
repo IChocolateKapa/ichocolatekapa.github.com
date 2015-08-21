@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CNAME" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/foreSeeImage/demo1/src/js/foreSeeImage-noReq.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/foreSeeImage/demo2/src/css/base.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/foreSeeImage/demo2/src/js/foreSeeImage.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/foreSeeImage/js/src/foreSeeImage-noReq.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/foreSeeImage/js/src/foreSeeImage.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javascripts/module/indexApp.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javascripts/module/main2.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javascripts/module/waterFallFunction.js" charset="UTF-8" />
