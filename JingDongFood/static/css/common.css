@@ -1,0 +1,101 @@
+/**
+ * Created by Administrator on 2015/7/14.
+ */
+@charset "utf-8";
+.w1210{width: 1210px;}
+.w60{width: 60px;}
+.w62{width: 62px;}
+.w313{width: 313px;}
+.w270{width: 270px;}
+.w210{width: 210px;}
+.w240{width: 240px;}
+.w518{width: 518px;}
+.h180{height: 180px;}
+.h45{height: 45px;}
+.h246{height: 246px;}
+.h100{height: 100px;}
+.h60{height: 60px;}
+.h30{height: 30px;}
+.w300{width: 300px;}
+.w890{width: 890px;}
+.h400{height: 400px;}
+.h470{height: 470px;}
+.w138{width: 138px;}
+.h138{height: 138px;}
+.h420{height: 420px;}
+
+/*.h45{height: 45px;}*/
+
+.w_30{width: 30%;}
+.w_70{width: 70%;}
+.h_70{height: 70%;}
+.h_30{height: 30%;}
+
+
+.w370{width: 363px;}
+.w950{width: 950px;}
+.w70{width: 70px;}
+.h412{height: 412px;}
+.h495{height: 495px;}
+.h600{height: 600px;}
+.h156{height: 156px;}
+.h_20{height: 20%;}
+.w_20{width: 20%;}
+
+.w200{width: 200px;}
+
+.ml10{margin-left: 10px;}
+.ml20{margin-left: 20px;}
+.mt90{margin-top: 90px;}
+.mb10{
+    margin-bottom: 10px;}
+
+.pdlr10{padding: 2px 10px;}
+.pd10{padding: 10px;}
+.pd20{padding: 20px;}
+
+.lt20{left: 20px;}
+.rt9{right: 9px;}
+.rt0{right: 0;}
+.rt1148{right: 1148px;}
+.tp65{top: 65px;}
+
+
+.lh20{line-height:  20px;}
+.lh45{line-height: 45px;}
+
+.vm{vertical-align: middle;}
+
+
+.f48{font-size: 48px;}
+.fccd0a0a{color: #cd0a0a;}
+.fce4393c{color: #e4393c;}
+.fcff9600{color: #ff9600;}
+.txtInt20{text-indent: 20px;}
+.txtlth{text-decoration: line-through;}
+
+.bdbtom{border-bottom: 2px solid #d26b31;}
+
+.bgdd26b31{background: #d26b31;}
+.bgde88a56{background: #e88a56;}
+
+.bgd-chihuo{background: #41adeb;}
+.bgd-rouchuan{background: #fba75c;}
+.bgd-putao{background: #310777;}
+.bgd-jiushui{background: #ffcc01;}
+.bgd-miaosha{background: #fff7e4; padding-bottom: 40px;}
+.bgd-liji{background: #cd0a0a;}
+
+.bgd-kele{background: rgba(67,172,231,.8);}
+.bgd-xian{background: rgba(255,152,30,.8);}
+.bgd-ele{background: rgba(255,74,74,.8);}
+.bgd-chan{background: rgba(137,212,40,.8);}
+
+
+
+.bgd-morning{background: url("../images/miaosha/morning.png") no-repeat;}
+.bgd-noon{background: url("../images/miaosha/noon.png") no-repeat;}
+.bgd-night{background: url("../images/miaosha/night.png") no-repeat;}
+
+
+/*.bgd-*/

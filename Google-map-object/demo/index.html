@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>谷歌地图Demo</title>
+    <link rel="stylesheet" href="../css/page_head.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/common_index.css"/>
+</head>
+<body>
+
+    <div class="header pf tp0 w_100 tc">
+        <h3 class="fcWhite ffMy fn f26">选择地图顶部的绘图工具在地图上绘制图形，进行布点测试</h3>
+    </div>
+    <div class="content w_100 h_100 mbc mt60">
+        <div class="main pr h_100 clearFix">
+            <div class="toolBar pa ffMy fcWhite f16">
+                <input id="address" type="text" class="btn bgdWhite txtInt fc209599" placeholder="输入地名" onkeypress="searchKeyPress(event);" >
+                <input id="search" type="button" value="跳转至地点"  class="btn curP" >
+                <input type="button" value="刷新地图" id="refresh" class="btn curP" />
+
+            </div>
+            <div class="mapCanvas fr h_100" id="mapCanvas"></div>
+            <div class="sideBar pr fl h_100">
+
+                <div class="budianDlg mbc fcWhite ffMy f12 none" id="_rect">
+                    <span>矩形行数：</span>
+                    <input type="text" placeholder="10" id="rectRow" value="10">&nbsp;<br/><br/>
+                    <span>矩形列数：</span>
+                    <input type="text" placeholder="10" id="rectColumn" value="10">&nbsp;<br/><br/>
+                    <div class="staylogin inlineBlock">
+                        <span class="_chbx inlineBlock _nologin"></span>&nbsp;
+                        <span class="pr tp-3 lt-4 fcwhite ffMy f12">预览</span>
+                    </div>&nbsp;&nbsp;
+                    <span class="inlineBlock pr tp-3 lt-4 fcwhite ffMy f12" >
+                        行间距： <i class="fstn" id="rectgap_r">0 米</i>
+                        列间距： <i class="fstn" id="rectgap_c">0 米</i>
+                    </span>
+
+                </div>
+
+                <div class="budianDlg mbc fcWhite ffMy f12 none" id="_poly">
+                    <span>折线布点数：</span>
+                    <input type="text" placeholder="10" id="polylineNum" value="10">&nbsp;<br/><br/>
+                    <div class="staylogin inlineBlock">
+                        <span class="_chbx inlineBlock _nologin"></span>&nbsp;
+                        <span class="pr tp-3 lt-4 fcwhite ffMy f12">预览</span>
+                    </div>&nbsp;&nbsp;
+                    <span class="inlineBlock pr tp-3 lt-4 fcwhite ffMy f12" >间距： <i class="fstn" id="plgap">0 米</i></span>
+
+                </div>
+
+                <div class="budianDlg mbc fcWhite ffMy pr">
+                    <span class="contact tl f18 fb">联系我</span>
+                    <a href="https://github.com/IChocolateKapa" target="_blank" class="fcWhite tc no_unl">Github</a>
+                    <a href="mailto:echochocolatekapa@163.com" class="fcWhite tc no_unl">邮箱</a>
+                </div>
+
+
+                <div class="budianDlg mbc fcWhite ffMy pr mt60">
+                    <span class="contact tl f18 fb">技术点</span>
+                    <a href="https://github.com/IChocolateKapa" class="fcWhite tc no_unl">Requirejs 模块化</a>
+                    <a href="https://github.com/IChocolateKapa" target="_blank" class="fcWhite tc no_unl">弹窗组件封装</a>
+                    <a href="https://github.com/IChocolateKapa" class="fcWhite tc no_unl">地图操作对象封装</a>
+                    <a href="https://github.com/IChocolateKapa" class="fcWhite tc no_unl">平均布点算法</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="http://ditu.google.cn/maps/api/js?sensor=false&libraries=drawing"></script>
+    <script src="../js/src/mapOption.js"></script>
+    <script src="../js/lib/require.js" data-main="../demo/main"></script>
+    <script src="../js/src/eventUtil.js"></script>
+    <script src="../js/src/mapWSJ.js"></script>
+
+
+</body>
+</html>
