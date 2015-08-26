@@ -5,6 +5,52 @@
     <title></title>
 </head>
 <body>
+<script>
+    // return masked string
+    function maskify(cc) {
+        var temp = "";
+        if(cc.length <= 4){
+            for(var i = 0; i < cc.length; i++){
+                temp += "#";
+            }
+        } else {
+            for(var i = 0; i < cc.length - 4; i++){
+                temp += "#";
+            }
 
+            temp += cc.substr(cc.length-4, cc.length);
+        }
+
+        console.log(temp);
+        return temp
+    }
+
+    function maskify_org(cc) {
+        return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
+    }
+
+//    maskify("")
+//    maskify("13")
+//    maskify("123")
+//    maskify("123123123123123")
+    function Person(){
+        this.age = 12;
+        this.name = "Echo";
+        this.sayHi = function(){
+            console.log("Hi");
+        }
+    }
+    var Programmer = function (){};
+    Programmer.prototype = new Person();
+    Programmer.prototype.sing = function(){
+        console.log("singing!");
+    }
+
+    var pro =  new Programmer();
+
+    pro.sayHi();
+    pro.sing();
+
+</script>
 </body>
 </html>
