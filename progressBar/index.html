@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条组件</title>
+    <link rel="stylesheet" href="css/progressBar.css"/>
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="progressBar.js"></script>
+    <link rel="stylesheet" href="css/progressBar.css"/>
+    <script>
+        $(function(){
+            var dataMap = {};
+            dataMap.status = "1";
+            var colorDict = {
+                "1": "d9534f",
+                "2": "f0ad4e",
+                "3": "5cb85c",
+                "4": "f0ad4e"
+            };
+            progressBar.initProgressBar($(".progressGroup"), {title: {show: false}, name:　"40%", barColor: "#" + colorDict[dataMap.status], progressBackground: {background: "white", border: "1px solid #" + colorDict[dataMap.status]}, percentage: 40});
+        });
+    </script>
+</head>
+<body>
+<div class="progress-group">
+    <div id="pv1" class="progressGroup progress-parent"></div>
+    <div id="pv2" class="progressGroup progress-child1"></div>
+    <div id="pv3" class="progressGroup progress-child2"></div>
+    <div id="pv4" class="progressGroup progress-child1"></div>
+    <div id="pv5" class="progressGroup progress-child1"></div>
+</div>
+</body>
+</html>

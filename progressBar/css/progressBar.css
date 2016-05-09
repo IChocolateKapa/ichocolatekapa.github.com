@@ -1,0 +1,96 @@
+/*Author: Echo*/
+.progress-group {
+  width: 400px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.progressGroup {
+  width: 100%;
+  font-family: 'Microsoft Yahei';
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 40px;
+}
+.progress-title {
+  width: 100px;
+  background: white;
+  height: 20px;
+  text-align: center;
+  color: #7e7e7e;
+  line-height: 20px;
+}
+.progress {
+  flex: 1;
+  height: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: right;
+  -webkit-box-shadow: inset 1px 0 1px 2px rgba(0, 0, 0, 0.1), 1px 0 1px 2px #eeeeee;
+  box-shadow: inset 1px 0 1px 2px rgba(0, 0, 0, 0.1), 1px 0 1px 2px #eeeeee;
+}
+.progress-bar {
+  width: 0;
+  height: 100%;
+  line-height: 20px;
+  color: #fff;
+  text-align: left;
+  text-indent: 20px;
+  background-color: #337ab7;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+.progress-bar span {
+  white-space: nowrap;
+}
+.progress-bar-striped {
+  background-size: 40px 40px;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-linear {
+  background-image: linear-gradient(to right, #0b3f6b, #63b8ff);
+}
+.progress-bar-linear-blue {
+  background-image: linear-gradient(to right, #3f9ad4, #59c1ff);
+}
+.progress-bar-linear-green {
+  background-image: linear-gradient(to right, #5cb85c, #b5b804);
+}
+.progress-bar-warn {
+  background-color: #f0ad4e;
+}
+.progress-bar-success {
+  background-color: #5cb85c;
+}
+.progress-bar-info {
+  background-color: #5bc0de;
+}
+.progress-bar-danger {
+  background-color: #d9534f;
+}
+.progress-parent {
+  width: 90%;
+  height: 50px;
+}
+.progress-child1 {
+  width: 85%;
+  height: 40px;
+}
+.progress-child2 {
+  width: 80%;
+  height: 30px;
+}
+.w90 {
+  width: 90%;
+}
