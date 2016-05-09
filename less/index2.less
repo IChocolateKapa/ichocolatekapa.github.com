@@ -76,7 +76,7 @@
     margin-top: 5px;
     line-height: @sideBarBtnSize;
     vertical-align: middle;
-    margin-left: calc(88% - 76%);
+    margin-left: 12%;
     &:hover{
       background: rgba(193, 71, 73, .9);
     }
@@ -239,7 +239,8 @@
     height: 6*@trigerTop + @trigerSize*6;
     width: @trigerSize;
     top: 50%;
-    margin-top: -6*@trigerTop/2 - @trigerSize*6/2;
+    .transform(translate(0, -50%));
+    //margin-top: -6*@trigerTop/2 - @trigerSize*6/2;
   }
   li{
     margin-top: @trigerTop;
