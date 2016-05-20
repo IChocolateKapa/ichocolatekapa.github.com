@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据实验室调研</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <script src="js/lib/jquery/dist/jquery.min.js"></script>
+    <script  src="js/lib/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script src="js/lib/jsPlumb/jsPlumb-2.0.5.js"></script>
+    <script src="js/module/basket.js"></script>
+    <script src="js/module/index.js"></script>
+    <script src="js/lib/common-event.js"></script>
+    <script src="js/module/util.js"></script>
+</head>
+<body>
+
+<div class="main_wrap">
+
+    <div class="main_wrap_left" id="main_wrap_left">
+        <div class="left_block">
+            <div class="loadPic">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </div>
+            <a href="javascript:void(0)" class="stateName">源数据</a>
+            <span class="ep top danger"></span>
+            <span class="ep btm success"></span>
+            <input type="text" class="reName"/>
+        </div>
+        <div class="left_block">
+            <div class="loadPic">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </div>
+            <!--<a href="javascript:void(0)"><span class="ep stateName"></span></a>-->
+            <a href="javascript:void(0)" class="stateName">随机采样</a>
+            <span class="ep top danger"></span>
+            <span class="ep btm success"></span>
+            <input type="text" class="reName"/>
+        </div>
+        <div class="left_block">
+            <div class="loadPic">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </div>
+            <!--<a href="javascript:void(0)"><span class="ep stateName">拆分</span></a>-->
+            <a href="javascript:void(0)" class="stateName">拆分</a>
+            <span class="ep top danger"></span>
+            <span class="ep btm success"></span>
+            <input type="text" class="reName"/>
+        </div>
+        <div class="left_block">
+            <div class="loadPic">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </div>
+            <!--<a href="javascript:void(0)"><span class="ep stateName"></span></a>-->
+            <a href="javascript:void(0)" class="stateName">随机森林</a>
+            <span class="ep top danger"></span>
+            <span class="ep btm success"></span>
+            <input type="text" class="reName"/>
+        </div>
+        <div class="left_block">
+            <div class="loadPic">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </div>
+            <!--<a href="javascript:void(0)"><span class="ep stateName">分类算法评估</span></a>-->
+            <a href="javascript:void(0)" class="stateName">分类算法评估</a>
+            <span class="ep top danger"></span>
+            <span class="ep btm success"></span>
+            <input type="text" class="reName"/>
+        </div>
+        <div class="left_block">
+            <div class="loadPic">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </div>
+            <!--<a href="javascript:void(0)"><span class="ep stateName">分类结果输出</span></a>-->
+            <a href="javascript:void(0)" class="stateName">分类结果输出</a>
+            <span class="ep top danger"></span>
+            <span class="ep btm success"></span>
+            <input type="text" class="reName"/>
+        </div>
+    </div>
+
+    <div class="main_wrap_right">
+
+        <!--<div id="mapPanel">
+            <div id="dragRect"></div>
+        </div>-->
+
+        <div id="container">
+            <div id="canvas"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="prosPanel">
+    <p>当前节点的属性是：</p>
+    <p class="propsContent"></p>
+</div>
+
+
+
+<div class="footer">
+    <p id="panel"></p>
+    <div class="button-group">
+        <input type="button" value="save" id="save_gragh" class="btn primary"/>
+        <input type="button" value="run" id="run" class="btn success"/>
+        <input type="button" value="run" id="convert" class="btn danger"/>
+    </div>
+</div>
+
+
+<div class="flyRect">
+    <ul>
+        <li>
+            <a href="javascript:void(0)">百度</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">谷歌</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">雅虎</a>
+        </li>
+    </ul>
+</div>
+
+
+<script>
+    $(function () {
+
+        window.localStorage['demoData'] = JSON.stringify({
+            'demo_1': {
+                'name': 'demo1',
+                'age': 25,
+                'title': 'employee',
+                'joindate': '2015-12-20'
+            },
+            'demo_2': {
+                'name': 'demo2',
+                'age': 24,
+                'title': 'manager',
+                'joindate': '2014-12-20'
+            },
+            'demo_3': {
+                'name': 'demo3',
+                'age': 26,
+                'title': 'sales-lady',
+                'joindate': '2016-1-10'
+            },
+            'demo_4': {
+                'name': 'demo4',
+                'age': 30,
+                'title': 'cto',
+                'joindate': '2013-1-20'
+            }
+        });
+
+
+        $("#mapPanel").css({
+            'width': $("#container").width() * scale + "px",
+            'height': $("#container").height() * scale + "px"
+        })
+
+
+
+    })
+</script>
+</body>
+</html>

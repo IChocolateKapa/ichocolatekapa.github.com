@@ -1,0 +1,202 @@
+.demo {
+    /* for IE10+ touch devices */
+    touch-action:none;
+}
+
+.w {
+    padding: 16px 30px;
+    position: absolute;
+    z-index: 4;
+    border: 1px solid #3284a7;
+    box-shadow: 0 0 9px 2px rgba(50, 132, 167, .4);
+    -o-box-shadow:  0 0 9px 2px rgba(50, 132, 167, .4);
+    -webkit-box-shadow:  0 0 9px 2px rgba(50, 132, 167, .4);
+    -moz-box-shadow:  0 0 9px 2px rgba(50, 132, 167, .4);
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    opacity: 0.8;
+    cursor: move;
+    background-color: white;
+    font-size: 14px;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+    text-align: center;
+}
+
+.w:hover {
+    background-color: #5c96bc;
+    color: white;
+}
+
+.aLabel {
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
+
+.aLabel.jsplumb-hover, .jsplumb-source-hover, .jsplumb-target-hover {
+    background-color: #1e8151;
+    color: white;
+}
+
+.aLabel {
+    background-color: white;
+    opacity: 0.8;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 1px solid #346789;
+    cursor: pointer;
+}
+
+/*显示展现连接拖动起点*/
+.ep2{
+    position: absolute;
+    bottom: 37%;
+    right: 5px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #ff4424;
+    cursor: pointer;
+    box-shadow: 0 0 9px 2px rgba(50, 132, 167, .4);
+    -webkit-transition: -webkit-box-shadow 0.25s ease-in;
+    -moz-transition: -moz-box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+}
+.ep2:hover {
+    box-shadow: 0 0 9px 2px rgba(50, 132, 167, .4);
+}
+
+/*没有显示展现连接拖动起点的样式*/
+.ep {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    transform: translate(-50%  0);
+    border-radius: 50%;
+    border: 1px solid #ebebeb !important;
+}
+.ep.top{
+    top: 0;
+}
+.ep.btm{
+    bottom: 0;
+}
+
+.default{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.primary{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.info{
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.warning{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.danger{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.color-info{
+    color: #5bc0de;
+}
+.color-primary{
+    color: #337ab7;
+}
+.color-success{
+    color: #5cb85c;
+}
+.color-warning{
+    color: #f0ad4e;
+}
+.color-danger{
+    color: #d9534f;
+}
+.color-default{
+    color: #333;
+}
+.color-999{
+    color: #999;
+}
+.color-fff{
+    color: #fff !important;
+}
+.statemachine-demo .jsplumb-endpoint {
+    z-index: 3;
+}
+
+#opened {
+    left: 10em;
+    top: 5em;
+}
+
+#phone1 {
+    left: 35em;
+    top: 12em;
+    width: 7em;
+}
+
+#inperson {
+    left: 12em;
+    top: 23em;
+}
+
+#phone2 {
+    left: 28em;
+    top: 24em;
+}
+
+#rejected {
+    left: 10em;
+    top: 35em;
+}
+
+.dragHover {
+    border: 2px solid orange;
+}
+
+path, .jsplumb-endpoint { cursor:pointer; }
+
+.stateName {
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    outline: none;
+    line-height: 30px;
+    color: #333;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 5px;
+    width: auto;
+}
+.small-blue{
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background: #3284a7;
+}
+.dragHover{
+    box-shadow: 1px 0 20px 5px orange;
+}
